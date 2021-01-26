@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recore Keeping System</title>
+</head>
+<body>
+<form action="messege" method="POST">
+     {% csrf_token %}
+    <center>
+    <h1>Enter The Messege</h1>
+     Subject:  <input type="text" name="subject" PLACEHOLDER="Subject">
+<br>
+   Messege :
+        <br>
+        <textarea id="" name="messege" rows="20" cols="50"></textarea>
+
+
+            <br>
+         <input type="submit" value="Submit">
+
+    </center>
+
+</form>
+{% for email in Emails  %}
+{{ email }}
+{% endfor %}
+
+
+
+pc
+
+
+
+
+
+</body>
+</html>
